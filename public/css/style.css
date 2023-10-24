@@ -1,0 +1,1047 @@
+.modal-customize .bi.bi-x-circle {
+    font-size: 55px;
+    color: red;
+}
+
+.modal-customize .btn-close {
+    font-size: 12px;
+}
+
+.modal-customize .modal-footer {
+    justify-content: center;
+    border-top: none;
+}
+
+.modal-customize .modal-footer .btn {
+    min-width: 120px;
+}
+
+.modal-customize .modal-header {
+    border-bottom: none;
+}
+
+#btnSubmitDelete {
+    display: none !important;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 300px;
+}
+
+/*!
+ * Jasny extension p7 to Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.btn-file > input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-size: 23px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(-300px, 0) scale(4);
+    direction: ltr;
+}
+
+.fileinput {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.fileinput .uneditable-input {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    cursor: text;
+}
+
+.fileinput .thumbnail {
+    display: inline-block;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fileinput .thumbnail > img {
+    max-height: 100%;
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+
+.fileinput .btn {
+    vertical-align: middle;
+}
+
+.fileinput-exists .fileinput-new,
+.fileinput-new .fileinput-exists {
+    display: none;
+}
+
+.fileinput-inline .fileinput-controls {
+    display: inline;
+}
+
+.fileinput .uneditable-input {
+    white-space: normal;
+}
+
+.fileinput-new .input-group .btn-file {
+    border-radius: 0 4px 4px 0;
+}
+
+.fileinput-new .input-group .btn-file.btn-xs,
+.fileinput-new .input-group .btn-file.btn-sm {
+    border-radius: 0 3px 3px 0;
+}
+
+.fileinput-new .input-group .btn-file.btn-lg {
+    border-radius: 0 6px 6px 0;
+}
+
+.form-group.has-warning .fileinput .uneditable-input {
+    color: #c09853;
+    border-color: #faebcc;
+}
+
+.form-group.has-warning .fileinput .fileinput-preview {
+    color: #c09853;
+}
+
+.form-group.has-warning .fileinput .thumbnail {
+    border-color: #faebcc;
+}
+
+.form-group.has-error .fileinput .uneditable-input {
+    color: #b94a48;
+    border-color: #ebccd1;
+}
+
+.form-group.has-error .fileinput .fileinput-preview {
+    color: #b94a48;
+}
+
+.form-group.has-error .fileinput .thumbnail {
+    border-color: #ebccd1;
+}
+
+.form-group.has-success .fileinput .uneditable-input {
+    color: #468847;
+    border-color: #d6e9c6;
+}
+
+.form-group.has-success .fileinput .fileinput-preview {
+    color: #468847;
+}
+
+.form-group.has-success .fileinput .thumbnail {
+    border-color: #d6e9c6;
+}
+
+.input-group-addon:not(:first-child) {
+    border-left: 0;
+}
+
+/* Button */
+.btn.default {
+    color: #333333;
+    background-color: #e5e5e5;
+    border-color: "";
+}
+.btn.default:hover,
+.btn.default:focus,
+.btn.default:active,
+.btn.default.active {
+    color: #333333;
+    background-color: #d1d1d1;
+}
+.open .btn.default.dropdown-toggle {
+    color: #333333;
+    background-color: #d1d1d1;
+}
+.btn.default:active,
+.btn.default.active {
+    background-image: none;
+}
+.open .btn.default.dropdown-toggle {
+    background-image: none;
+}
+.btn.default.disabled,
+.btn.default.disabled:hover,
+.btn.default.disabled:focus,
+.btn.default.disabled:active,
+.btn.default.disabled.active,
+.btn.default[disabled],
+.btn.default[disabled]:hover,
+.btn.default[disabled]:focus,
+.btn.default[disabled]:active,
+.btn.default[disabled].active,
+fieldset[disabled] .btn.default,
+fieldset[disabled] .btn.default:hover,
+fieldset[disabled] .btn.default:focus,
+fieldset[disabled] .btn.default:active,
+fieldset[disabled] .btn.default.active {
+    background-color: #e5e5e5;
+}
+.btn.default .badge {
+    color: #e5e5e5;
+    background-color: #333333;
+}
+
+/* sản phẩm */
+
+/***
+Portlets
+***/
+/* Basic portlet */
+.portlet .topline {
+    border-top: 1px solid #eee !important;
+    border-bottom: none !important;
+}
+.portlet {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+.portlet > .portlet-title {
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    margin-bottom: 10px;
+    min-height: 41px;
+}
+.portlet > .portlet-title {
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    margin-bottom: 10px;
+    min-height: 41px;
+}
+.portlet > .portlet-title:before,
+.portlet > .portlet-title:after {
+    content: " ";
+    display: table;
+}
+.portlet > .portlet-title:after {
+    clear: both;
+}
+.portlet > .portlet-title > .caption {
+    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.portlet > .portlet-title > .caption > svg {
+    float: left;
+    /* margin-top: 4px; */
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 5px;
+    color: #666;
+}
+.portlet > .portlet-title > .caption > i.glyphicon {
+    margin-top: 2px;
+}
+.portlet > .portlet-title > .caption > .caption-helper {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    line-height: 13px;
+    color: #aaa;
+}
+.portlet > .portlet-title > .actions {
+    float: right;
+    display: inline-block;
+    padding: 6px 0;
+}
+.portlet > .portlet-title > .actions > .dropdown-menu i {
+    color: #555555;
+}
+.portlet > .portlet-title > .actions > .btn,
+.portlet > .portlet-title > .actions > .btn.btn-sm,
+.portlet > .portlet-title > .actions > .btn-group > .btn,
+.portlet > .portlet-title > .actions > .btn-group > .btn.btn-sm {
+    padding: 4px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.portlet > .portlet-title > .actions > .btn.btn-default,
+.portlet > .portlet-title > .actions > .btn.btn-sm.btn-default,
+.portlet > .portlet-title > .actions > .btn-group > .btn.btn-default,
+.portlet > .portlet-title > .actions > .btn-group > .btn.btn-sm.btn-default {
+    padding: 3px 9px;
+}
+.portlet > .portlet-title > .actions > .btn > i,
+.portlet > .portlet-title > .actions > .btn.btn-sm > i,
+.portlet > .portlet-title > .actions > .btn-group > .btn > i,
+.portlet > .portlet-title > .actions > .btn-group > .btn.btn-sm > i {
+    font-size: 13px;
+}
+.portlet > .portlet-title > .actions .btn-icon-only {
+    padding: 5px 7px 3px 7px;
+}
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default {
+    padding: 4px 6px 2px 6px;
+}
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default > i {
+    font-size: 14px;
+}
+.portlet
+    > .portlet-title
+    > .actions
+    > .portlet-input1
+    > .input-group
+    > .form-control,
+.portlet > .portlet-title > .actions > .portlet-input1 > .form-control {
+    padding: 4px 10px;
+    height: 27px;
+    font-size: 13px;
+}
+.portlet > .portlet-title > .tools {
+    float: right;
+    display: inline-block;
+    padding: 12px 0 8px 0;
+}
+.portlet > .portlet-title > .tools > a {
+    display: inline-block;
+    height: 16px;
+    margin-left: 5px;
+}
+.portlet > .portlet-title > .tools > a.remove {
+    background-image: url(../img/portlet-remove-icon.png);
+    background-repeat: no-repeat;
+    width: 11px;
+}
+.portlet > .portlet-title > .tools > a.config {
+    background-image: url(../img/portlet-config-icon.png);
+    background-repeat: no-repeat;
+    width: 12px;
+}
+.portlet > .portlet-title > .tools > a.reload {
+    background-image: url(../img/portlet-reload-icon.png);
+    width: 13px;
+}
+.portlet > .portlet-title > .tools > a.expand {
+    background-image: url(../img/portlet-expand-icon.png);
+    width: 14px;
+}
+.portlet > .portlet-title > .tools > a.collapse {
+    background-image: url(../img/portlet-collapse-icon.png);
+    width: 14px;
+}
+.portlet > .portlet-title > .tools > a:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    opacity: 0.6;
+    filter: "alpha(opacity=60)";
+}
+.portlet > .portlet-title > .pagination {
+    float: right;
+    display: inline-block;
+    margin: 0px;
+    border: 0;
+    padding: 5px 0;
+}
+.portlet > .portlet-body {
+    clear: both;
+}
+.portlet > .portlet-empty {
+    min-height: 125px;
+}
+.portlet.full-height-content {
+    margin-bottom: 0;
+}
+
+/* Portlet background colors */
+/* Side bordered portlet */
+.portlet.bordered {
+    border-left: 2px solid #e6e9ec !important;
+}
+.portlet.bordered > .portlet-title {
+    border-bottom: 0;
+}
+
+/* Solid colored portlet */
+.portlet.solid {
+    padding: 0 10px 10px 10px;
+    border: 0px;
+}
+.portlet.solid > .portlet-title {
+    border-bottom: 0;
+    margin-bottom: 10px;
+}
+.portlet.solid > .portlet-title > .caption {
+    padding: 16px 0 2px 0;
+}
+.portlet.solid > .portlet-title > .actions {
+    padding: 12px 0 6px 0;
+}
+.portlet.solid > .portlet-title > .tools {
+    padding: 14px 0 6px 0;
+}
+
+/* Solid bordered portlet */
+.portlet.solid.bordered > .portlet-title {
+    margin-bottom: 10px;
+}
+
+/* Box portlet */
+.portlet.box {
+    padding: 0px !important;
+}
+.portlet.box > .portlet-title {
+    border-bottom: 1px solid #eee;
+    padding: 0 10px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.portlet.box > .portlet-title > .caption {
+    padding: 11px 0 9px 0;
+}
+.portlet.box > .portlet-title > .tools > a.remove {
+    background-image: url(../img/portlet-remove-icon-white.png);
+}
+.portlet.box > .portlet-title > .tools > a.config {
+    background-image: url(../img/portlet-config-icon-white.png);
+}
+.portlet.box > .portlet-title > .tools > a.reload {
+    background-image: url(../img/portlet-reload-icon-white.png);
+}
+.portlet.box > .portlet-title > .tools > a.expand {
+    background-image: url(../img/portlet-expand-icon-white.png);
+}
+.portlet.box > .portlet-title > .tools > a.collapse {
+    background-image: url(../img/portlet-collapse-icon-white.png);
+}
+.portlet.box > .portlet-title > .actions {
+    padding: 6px 0;
+}
+.portlet.box > .portlet-body {
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Light Portlet */
+.portlet.light {
+    padding: 12px 20px 15px 20px;
+    background-color: #fff;
+}
+.portlet.light.bordered {
+    border: 1px solid #e1e1e1 !important;
+}
+.portlet.light.bordered > .portlet-title {
+    border-bottom: 1px solid #eee;
+}
+.portlet.light.bg-inverse {
+    background: #f7f7f7;
+}
+.portlet.light > .portlet-title {
+    padding: 0;
+    min-height: 48px;
+}
+.portlet.light > .portlet-title > .caption {
+    color: #666;
+    padding: 10px 0;
+}
+.portlet.light > .portlet-title > .caption > i {
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+.portlet.light > .portlet-title > .actions {
+    padding: 6px 0 14px 0;
+}
+.portlet.light > .portlet-title > .actions .btn-default {
+    color: #666;
+}
+.portlet.light > .portlet-title > .actions .dropdown-menu li > a {
+    color: #555;
+}
+.portlet.light > .portlet-title > .inputs {
+    float: right;
+    display: inline-block;
+    padding: 2px 0 11px 0;
+}
+.portlet.light > .portlet-title > .pagination {
+    padding: 2px 0 13px 0;
+}
+.portlet.light > .portlet-title > .tools {
+    padding: 10px 0 13px 0;
+    margin-top: 2px;
+}
+.portlet.light .tabbable-line.portlet-title {
+    padding-bottom: 0px;
+}
+.portlet.light .tabbable-line.portlet-title > .nav-tabs {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+}
+.portlet.light .tabbable-line.portlet-title > .nav-tabs > li {
+    margin: 0;
+}
+.portlet.light .tabbable-line.portlet-title > .nav-tabs > li > a {
+    margin: 0;
+    padding: 11px 13px 11px 13px;
+    font-size: 13px;
+}
+.portlet.light .tabbable-line.portlet-body > .tab-content {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.portlet.light.form-fit {
+    padding: 0;
+}
+.portlet.light.form-fit > .portlet-title {
+    padding: 17px 20px 10px 20px;
+    margin-bottom: 0;
+}
+
+/***
+  Portlet tabs
+  ***/
+.portlet-tabs > .nav-tabs {
+    position: relative;
+    top: -41px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-bottom: none;
+}
+.portlet-tabs > .nav-tabs > li {
+    float: right;
+    margin-left: 1px;
+}
+.portlet-tabs > .nav-tabs > li > a {
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    line-height: 16px;
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left: 0;
+    border-right: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.portlet-tabs > .nav-tabs > li > a:hover {
+    color: #333;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: transparent;
+    background-color: #fff;
+}
+.portlet-tabs > .nav-tabs > li:last-child > a {
+    border-right: 0;
+}
+.portlet-tabs > .nav-tabs > li.active {
+    color: #333;
+    border-top-color: transparent;
+}
+.portlet-tabs > .nav-tabs > li.active > a {
+    margin-bottom: 0px;
+    border-bottom: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: transparent !important;
+    color: #555555;
+    cursor: default;
+    background-color: #fff;
+}
+.portlet-tabs > .nav-tabs > li.active > a:hover {
+    color: #333;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: transparent;
+    background-color: #fff;
+}
+.portlet-tabs > .tab-content {
+    padding: 10px !important;
+    margin: 0px;
+    margin-top: -50px !important;
+}
+
+.portlet.tabbable .portlet-body {
+    padding: 0px;
+}
+
+.tab-pane > p:last-child {
+    margin-bottom: 0px;
+}
+
+/* Reverse aligned tabs */
+.tabs-reversed > li {
+    float: right;
+    margin-right: 0;
+}
+.tabs-reversed > li > a {
+    margin-right: 0;
+}
+
+/* jQuery UI Draggable Portlets */
+.portlet-sortable > .portlet-title {
+    cursor: move;
+}
+
+.portlet-sortable-placeholder {
+    border: 2px dashed #eee;
+    margin-bottom: 25px;
+}
+
+.portlet-sortable-empty {
+    height: 45px;
+}
+
+.ajax-file-upload {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    color: #888;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -moz-box-shadow: 0 2px 0 0 #e8e8e8;
+    -webkit-box-shadow: 0 2px 0 0 #e8e8e8;
+    box-shadow: 0 2px 0 0 #e8e8e8;
+    padding: 6px 10px 4px 10px;
+    color: #fff;
+    background: #2f8ab9;
+    border: none;
+    -moz-box-shadow: 0 2px 0 0 #13648d;
+    -webkit-box-shadow: 0 2px 0 0 #13648d;
+    box-shadow: 0 2px 0 0 #13648d;
+    vertical-align: middle;
+}
+
+.ajax-file-upload:hover {
+    background: #3396c9;
+    -moz-box-shadow: 0 2px 0 0 #15719f;
+    -webkit-box-shadow: 0 2px 0 0 #15719f;
+    box-shadow: 0 2px 0 0 #15719f;
+}
+
+.ajax-upload-dragdrop {
+    border: 2px dotted #a5a5c7;
+    bottom: 0;
+    color: #dadce3;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.font-red-sunglo {
+    color: #e26a6a !important;
+}
+
+/*##*/
+.overlay_ .ajax-file-upload-statusbar {
+    border: 1px solid #e6e6e6;
+    margin-top: 10px;
+    width: 242px;
+    margin-right: 10px;
+    margin: 4px;
+    /* -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px 5px 5px 5px;*/
+    vertical-align: bottom;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.overlay_ .ajax-file-upload-filename {
+    width: 100%;
+    height: auto;
+    margin: 0 5px 5px 10px;
+    color: #807579;
+}
+.overlay_ .ajax-file-upload-progress {
+    position: absolute;
+    width: 202px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.overlay_ .ajax-file-upload-bar {
+    background-color: #0ba1b5;
+    width: 0;
+    height: 20px;
+    border-radius: 3px;
+}
+.overlay_ .ajax-file-upload-percent {
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    left: 48%;
+}
+.overlay_ .ajax-file-upload-red {
+    -moz-box-shadow: inset 0 39px 0 -24px #e67a73;
+    -webkit-box-shadow: inset 0 39px 0 -24px #e67a73;
+    box-shadow: inset 0 39px 0 -24px #e67a73;
+    background-color: #e4685d;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #b23e35;
+    cursor: pointer;
+    vertical-align: top;
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 85px;
+}
+.overlay_ .ajax-file-upload-green {
+    background-color: #77b55a;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #fff;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #5b8a3c;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.overlay_ .ajax-file-upload:hover {
+    background: #3396c9;
+    -moz-box-shadow: 0 2px 0 0 #15719f;
+    -webkit-box-shadow: 0 2px 0 0 #15719f;
+    box-shadow: 0 2px 0 0 #15719f;
+}
+
+.overlay_ .pvm {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.overlay_ .headerBox {
+    border-color: #c4cde0;
+    border-bottom-color: #f5f5f5;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 3px 3px 0 0;
+    left: -1px;
+    margin: 0;
+    right: -1px;
+    top: -1px;
+    z-index: 2;
+}
+.overlay_ .headerFixed {
+    border-bottom-color: #b0bbd7;
+    -webkit-border-radius: 0;
+    left: 50%;
+    margin-left: -483px;
+    position: fixed;
+    right: auto;
+    width: 946px;
+}
+.overlay_ .uiOverlay {
+    position: relative;
+    z-index: 200;
+}
+.overlay_ .uiLayerPage {
+    margin: 0px auto;
+    width: 720px;
+}
+
+.overlay_ .uiOverlayContent {
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    padding-bottom: 25px;
+    border: medium none;
+    position: relative;
+}
+.overlay_ .pam {
+    padding: 10px;
+}
+
+.overlay_ .uiOverlay {
+    position: relative;
+    z-index: 200;
+}
+.overlay_ ._31e {
+    position: fixed !important;
+    width: 100%;
+}
+.overlay_ .uiLayerPageDefaultPadding {
+    padding: 15px;
+    min-height: 500px;
+}
+.overlay_ .uiLayerPageInner {
+    padding: 96px 0 40px 0;
+}
+.overlay_ .ajax-file-upload-file img {
+    max-height: 100%;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 232px;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: move;
+}
+.overlay_ .ajax-file-upload-file {
+    text-align: center;
+}
+.overlay_ .sLuu {
+    float: right;
+    background: none repeat scroll 0 0 #2f9eb9;
+    color: #ffffff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.overlay_ .cHuy {
+    background-size: auto auto;
+    background-color: #999999;
+}
+.overlay_ .ajax-file-upload-file {
+    height: 250px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+.overlay_ .headerBox input[type="text"] {
+    padding: 5px;
+    width: 760px;
+    font-weight: bold;
+}
+.overlay_ .ajax-file-upload-input input[type="text"],
+.overlay_ .ajax-file-upload-textarea textarea {
+    border: medium none;
+    padding: 5px;
+    width: 100%;
+}
+.overlay_ .ajax-file-upload-input input[type="text"] {
+    border-bottom: 1px solid #e6e6e6;
+}
+.overlay_ .ajax-file-upload-textarea textarea {
+    height: 50px;
+    resize: none;
+}
+.overlay_ .cDes {
+    padding: 5px;
+    width: 760px;
+    margin-top: 5px;
+    height: 30px;
+    resize: none;
+}
+.article {
+    min-height: 500px;
+}
+.ajax-file-upload-statusbar:hover .ajax-file-upload-del,
+.ajax-file-upload-statusbar:hover .ajax-file-upload-choose,
+.ajax-file-upload-statusbar:hover .ajax-file-upload-detail {
+    display: block !important;
+}
+.overlay_ .ajax-file-upload-del,
+.overlay_ .ajax-file-upload-choose,
+.overlay_ .ajax-file-upload-detail {
+    display: none;
+}
+.overlay_ .ajax-file-upload-del,
+.overlay_ .ajax-file-upload-choose,
+.overlay_ .ajax-file-upload-detail {
+    background-color: transparent !important;
+    color: red !important;
+    position: absolute;
+    border: none;
+    right: 0%;
+    top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    /* width: 80%; */
+    /* left: 0; */
+    /* margin: auto; */
+}
+.overlay_ .ajax-file-upload-choose {
+}
+.overlay_ .ajax-file-upload-detail {
+    background: rgba(47, 158, 185, 1);
+    color: #ffffff;
+    right: 107px;
+    top: 30%;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+.overlay_ .ajax-file-upload-del:hover,
+.overlay_ .ajax-file-upload-choose:hover,
+.cHuy:hover {
+    background-color: #d1d1d1;
+    color: #333333;
+}
+.overlay_ .ajax-file-upload-detail:hover,
+#sLuu:hover,
+#luuTag:hover {
+    background: rgba(47, 138, 185, 1) !important;
+}
+.overlay_ .cselec {
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 41px;
+    width: 169px;
+}
+.overlay_ #sLuu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.overlay_ #cHuy {
+    position: absolute;
+    top: 10px;
+}
+.ovl {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    background: url(../../adminuser/images/reding.gif) no-repeat
+        rgba(255, 255, 255, 0.8);
+    background-position: center;
+    top: 0;
+    display: none;
+}
+.del {
+    background-image: url(../../adminuser/img/cross.png);
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    width: 16px;
+}
+.paginationTTIQ p a.current {
+    background: none repeat scroll 0 0 #101aa7;
+    color: #ffffff;
+}
+.sbutton {
+    padding: 2px 5px;
+    font-weight: bold;
+}
+.overlay_ .chon_dm {
+    background: url(../../adminuser/images/toggle-expand.png) no-repeat scroll
+        5px 4px rgba(0, 0, 0, 0);
+    border: 1px solid #cfced0 !important;
+    color: #0b4278 !important;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 37px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+.overlay_ .expand {
+    background: url(../../adminuser/images/toggle.png) no-repeat scroll 5px 4px
+        rgba(0, 0, 0, 0) !important;
+}
+.album-images .ajax-file-upload-del {
+    top: 0%;
+}
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+.image_list_item {
+    height: 250px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    background-color: #fff;
+}
+
+.image_list_item .image_list_img img {
+    max-height: 100%;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 232px;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: move;
+}
+
+.image_list_item .image_list_img_close {
+    position: absolute;
+    border: none;
+    right: 0%;
+    top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+}
+
+.image_list_item .image_list_img_close i {
+    color: red;
+}
+
+.image_list_item:hover .image_list_img_close {
+    opacity: 1;
+}

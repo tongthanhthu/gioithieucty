@@ -1,0 +1,170 @@
+<html>
+@php
+    $icon = \App\Models\Logo::query()->where('status', true)->first();
+@endphp
+<head>
+    <meta charset="utf-8"/>
+    <title>Đăng nhập</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ID BOTA - Đăng nhập" name="description"/>
+    <meta content="@x-team BOTA" name="author"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="{{ $icon ? asset('storage/'. $icon->icon) : '#' }}" />
+    <link rel="icon" href="{{ $icon ? asset('storage/'. $icon->icon) : '#' }}" />
+    <link href="{{ asset("statics/css/login.css") }}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="{{ asset("statics/js/jquery.min.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("statics/js/jquery.validate.min.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("statics/js/login.js") }}"></script>
+</head>
+<body>
+<div class="bota_login_style">
+    <div class="col-12">
+        <div class="container form-login">
+            <div class="login-form-view">
+                <div class="bota_header">
+                    <img class="logo" alt="Bota" src="{{ asset("statics/imgs/logo.webp") }}" width="192" height="51">
+                    <h1 class="title-center">Đăng nhập vào hệ thống</h1>
+                </div>
+                <x-auth-session-status class="mb-4" :status="session('status')" />
+                <x-auth-validation-errors class="mb-4" :errors="$errors" style="color: red;"/>
+                <div class="login-form-block">
+                    <!-- BEGIN LOGIN FORM -->
+                    <form class="login-form" name="login" method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <div class="page-login">
+                            <div class="alert alert-danger display-hide">
+                                <span>Hãy nhập tài khoản email và mật khẩu.</span>
+                            </div>
+                            <div class="alert alert-success display-hide">
+                                <span>Đăng nhập thành công.</span>
+                            </div>
+                            <div class="form-group">
+                                <x-input id="email" class="block w-full" type="email" name="email" id="email1" :value="old('email')" required autofocus placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <x-input id="password" class="block w-full"
+                                         type="password"
+                                         name="password"
+                                         placeholder="Mật khẩu"
+                                         required autocomplete="current-password" />
+                                <a href="javascript:;" id="show-password" class="input-inline-button">
+                                    <img class="icon-eye-slash" src="{{ asset("statics/imgs/eye-slash.svg") }}">
+                                    <img class="icon-eye" src="{{ asset("statics/imgs/eye.svg") }}">
+                                </a>
+                            </div>
+                            <div class="form-group row margin-sm-bottom">
+                                <div class="form-checkbox checkbox-confirm d-flex col-6">
+                                    <label for="filter-envogends">
+                                        <input class="savelog" id="filter-envogends" name="remember" type="checkbox" value="1" />
+                                        <i class="fa"></i>
+                                        <span>Ghi nhớ đăng nhập</span>
+                                    </label>
+                                </div>
+                                <div class="col-6 forget-pass">
+                                    <a href="javascript:void(0)" class="forgot-pos-password">Quên mật khẩu ?</a>
+                                </div>
+                            </div>
+                            <input type="hidden" name="service" value=""/>
+                            <input type="hidden" name="cont" value=""/>
+                            <input type="hidden" name="w" value=""/>
+                            <button type="submit">Đăng nhập</button>
+{{--                            <div class="bota_register_link">--}}
+{{--                                <a href="https://aff.bota.vn/embed-register?service=/&nxtref=&aff_url=undefined&ref_mkt=" title="Tạo tài khoản ngay" target="_blank">Tạo tài khoản ngay</a>--}}
+{{--                            </div>--}}
+                        </div>
+                    </form>
+                    <!-- END LOGIN FORM -->
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $('#show-password').on('click', function() {
+                        var passwordField = $('#password');
+                        var passwordFieldType = passwordField.attr('type');
+
+                        if (passwordFieldType === "password") {
+                            $('.icon-eye').show()
+                            $('.icon-eye-slash').hide()
+                            passwordField.attr('type', 'text');
+                        } else {
+                            $('.icon-eye-slash').show()
+                            $('.icon-eye').hide()
+                            passwordField.attr('type', 'password');
+                        }
+                    });
+                });
+            </script>
+            <!-- BEGIN FORGOT PASSWORD FORM -->
+            <div class="forgot-pass-view forgot-pass-block">
+                <div class="bota_header">
+                    <a href="{{ route('index') }}" title="logo">
+                        <img class="logo" alt="Bota" src="{{ asset("statics/imgs/logo.webp") }}" width="192" height="51">
+                    </a>
+                    <h2 class="title-center">Quên mật khẩu ?</h2>
+                </div>
+                <div class="login-form-block">
+                    <div class="bnc-lostpassword notactive">
+                        <x-auth-validation-errors class="mb-4" :errors="$errors" style="color: red;"/>
+                        <form method="POST" action="{{ route('password.email') }}">
+                            @csrf
+                            <div class="page-login">
+                                <p>Hãy nhập email để lấy lại mật khẩu.</p>
+{{--                                <div class="processing-message alert alert-success" style="display: none;">Đang xử lí...</div>--}}
+{{--                                <div class="success-message alert alert-success" style="display: none;">Hướng dẫn lấy lại mật khẩu đã được gửi về email của bạn, hãy kiểm tra email và tiếp tục quá trình.</div>--}}
+                                <div class="form-group">
+                                    <input class="placeholder-no-fix" type="email" id="email2" autocomplete="on" value="{{old('email')}}" placeholder="Email" name="email" data-error-required="Email không được để trống." data-error-email="Email không đúng định dạng." readonly/>
+                                </div>
+                                <button type="submit"> Gửi</button>
+                                <div class="bota_login_link">
+                                    Đã có tài khoản<a href="javascript:void(0);" title="Đăng nhập ngay" id="back-btn"> Đăng nhập ngay</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- END FORGOT PASSWORD FORM -->
+        </div>
+    </div>
+    <script>
+        // Lấy ô input thứ nhất và ô input thứ hai bằng JavaScript
+        const email1 = document.getElementById('email1');
+        const email2 = document.getElementById('email2');
+
+        // Gắn sự kiện "input" cho ô input thứ nhất
+        email1.addEventListener('change', function () {
+            // Khi dữ liệu thay đổi trong ô input thứ nhất,
+            // cập nhật giá trị của ô input thứ hai
+            email2.value = email1.value;
+        });
+    </script>
+    <!-- BEGIN COPYRIGHT -->
+    <div class="col-12">
+        <div class="bota_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-sm-12 col-12">
+                        <div class="copyright">Copyright © 2023 bota.vn - Giải pháp quản lý và bán hàng đa kênh toàn diện</div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-sm-12 col-12">
+                        <ul class="bota_footer_link">
+                            <li>
+                                <a href="tel:19002008" title="Trung tâm trợ giúp">
+                                    Trung tâm trợ giúp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:19002008" title="Ý kiến phản hồi">
+                                    Ý kiến phản hồi
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

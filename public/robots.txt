@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Allow: /public/
+Disallow: /cgi-bin/
+Disallow: /pdh1102/Sitemap:
